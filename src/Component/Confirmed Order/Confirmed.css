@@ -1,0 +1,81 @@
+.order-confirmed{
+    z-index : 9;
+   width : max(30%, 23rem);
+   height: auto;
+   position: absolute;
+   top : 40%;
+   left : 30%;
+   backdrop-filter:  blur(3rem);
+   padding : 1rem;
+   border-radius: 1rem;
+}
+.background-one{
+    background-color: rgb(246, 245, 243);
+    border-radius: 0.4rem;
+}
+
+.confirm-order-images{
+    border-radius: 0.2rem;
+}
+.order-confirmed .confirmed-svg{
+    width: 3.5rem;
+    margin-bottom: 1rem;
+}
+.order-confirmed  h3{
+    color : black;
+
+}
+.order-confirmed .dessert-image{
+    width : 4.3rem;
+    border-radius: 0.5rem;
+}
+
+.dessert-name{
+    color :hsl(14, 65%, 9%) !important;
+    font-weight: 700;
+}
+.dessert-quantity{
+    color : var(--Red) !important ;
+}
+.dessert-price{
+    color : var(--Rose-300) !important ;
+}
+
+.start-next-order{
+     background-color: var(--Red);
+     color : white;
+     padding : 0.4rem;
+     border-radius: 2rem;
+     margin : 0.2rem;
+}
+.start-next-order:hover{
+box-shadow: 0.4rem 0.7rem 1rem black;
+border: none;
+transition: box-shadow 0.3s ease-in-out;
+}
+.showmeOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 0;
+}
+.showmeOverlay > .active{
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+@media(max-width : 65.625rem){
+    .order-confirmed{
+        width : 70%;
+        height: auto;
+        top : 60rem;
+        left : 4rem;
+    }
+
+}
