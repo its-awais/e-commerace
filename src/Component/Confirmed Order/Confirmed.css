@@ -21,10 +21,11 @@
     width: 3.5rem;
     margin-bottom: 1rem;
 }
-.order-confirmed  h3{
+h3{
     color : black;
 
 }
+
 .order-confirmed .dessert-image{
     width : 4.3rem;
     border-radius: 0.5rem;
